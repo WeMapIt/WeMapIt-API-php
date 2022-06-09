@@ -1,0 +1,7 @@
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^coordinates/(\w+)/?$ coordinates.php?id=$1
+RewriteRule ^coordinates/?$ coordinates.php [NC,L]

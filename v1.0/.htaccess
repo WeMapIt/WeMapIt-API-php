@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^(\w+)/(\w+)/(\w+)/?$ $1.php?map_id=$2&item_id=$3
+RewriteRule ^(\w+)/(\w+)/?$ $1.php?map_id=$2
+RewriteRule ^(\w+)/?$ $1.php [NC,L]
